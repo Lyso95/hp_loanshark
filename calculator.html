@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de" class="h-100">
+
+<head>
+    <title>AppName: Ein Coding Projekt von Amos Langensiepen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/19ebefb38a.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="icon" type="image/ico" href="/img/favicon.ico"></link>
+</head>
+
+<body class="d-flex flex-column h-100 bg-blue">
+    <div class="container bg-light h-100">
+        <div class="row">
+            <div class="col-12">
+                <h1>Kreditkalkulator</h1>
+            </div>
+            <div class="col-12 col-md-6 bg-black bg-opacity-25 rounded">
+                <div class="row gy-2 gx-3">
+                    <div class="col-12">
+                        <label for="kMenge" class="mt-2">Kreditmenge:</label>
+                        <input id="kMenge" type="number" class="form-control" placeholder="Kreditmenge" aria-label="Kreditmenge" required>                       
+                    </div>
+                    <div class="col-12">
+                        <label for="mRaten">Monatsraten:</label>
+                        <input id="mRaten" type="number" class="form-control" placeholder="Monatsraten" aria-label="Monatsraten" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="kRate">Kreditrate:</label>
+                        <input id="kRate" type="text" class="form-control" placeholder="Kreditrate" aria-label="Kreditrate" required>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-light my-2">Kalkulieren</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                test
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+                <thead class="bg-dark bg-opacity-75 border-warning border-2 text-light">
+                    <th>Monat</th>
+                    <th>Zahlung</th>
+                    <th>Kreditsumme</th>
+                    <th>Zinsen</th>
+                    <th>Zinsen Gesamt</th>
+                    <th>Bilanz</th>
+                </thead>
+                <tbody id="results">
+                </tbody>
+                <tfoot class="bg-dark bg-opacity-75 border-warning border-2 text-light">
+                    <td>Monat</td>
+                    <td>Zahlung</td>
+                    <td>Kreditsumme</td>
+                    <td>Zinsen</td>
+                    <td>Zinsen Gesamt</td>
+                    <td>Bilanz</td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/js/site.js"></script>
+</body>
+
+</html>
