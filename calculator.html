@@ -2,7 +2,7 @@
 <html lang="de" class="h-100">
 
 <head>
-    <title>AppName: Ein Coding Projekt von Amos Langensiepen</title>
+    <title>LoanShark: Ein Coding Projekt von Amos Langensiepen</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,50 +20,53 @@
     <div class="container bg-light h-100">
         <div class="row">
             <div class="col-12">
-                <h1>Kreditkalkulator</h1>
+                <h1>Kreditrechner</h1>
             </div>
             <div class="col-12 col-md-6 bg-black bg-opacity-25 rounded">
                 <div class="row gy-2 gx-3">
                     <div class="col-12">
-                        <label for="kMenge" class="mt-2">Kreditmenge:</label>
-                        <input id="kMenge" type="number" class="form-control" placeholder="Kreditmenge" aria-label="Kreditmenge" required>                       
+                        <label for="kBetrag" class="mt-2">Kreditbetrag:</label>
+                        <input id="kBetrag" type="number" class="form-control" placeholder="Kreditbetrag" aria-label="Kreditbetrag" required>                       
                     </div>
                     <div class="col-12">
                         <label for="mRaten">Monatsraten:</label>
                         <input id="mRaten" type="number" class="form-control" placeholder="Monatsraten" aria-label="Monatsraten" required>
                     </div>
                     <div class="col-12">
-                        <label for="kRate">Kreditrate:</label>
-                        <input id="kRate" type="text" class="form-control" placeholder="Kreditrate" aria-label="Kreditrate" required>
+                        <label for="zSatz">Zinssatz:</label>
+                        <input id="zSatz" type="text" class="form-control" placeholder="Zinssatz" aria-label="Zinssatz" required>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
-                        <button class="btn btn-light my-2">Kalkulieren</button>
+                        <button class="btn btn-light my-2">Berechnen</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                test
+                <p class="d-flex justify-content-center fs-4">Rückzahlungsrate:</p>
+                Kreditsumme: <span id="kSum"></span> <br>
+                Zinsen und Gebühren gesamt: <span id="gGesamt"></span> <br>
+                Gesamtaufwand: <span id="gAufwand"></span>
             </div>
         </div>
         <div class="row">
             <table class="table table-striped">
                 <thead class="bg-dark bg-opacity-75 border-warning border-2 text-light">
                     <th>Monat</th>
-                    <th>Zahlung</th>
-                    <th>Kreditsumme</th>
+                    <th>Ratenzahlung</th>
+                    <th>Tilgung</th>
                     <th>Zinsen</th>
-                    <th>Zinsen Gesamt</th>
-                    <th>Bilanz</th>
+                    <th>Gebühren gesamt</th>
+                    <th>Schuldenstand</th>
                 </thead>
                 <tbody id="results">
                 </tbody>
                 <tfoot class="bg-dark bg-opacity-75 border-warning border-2 text-light">
                     <td>Monat</td>
-                    <td>Zahlung</td>
-                    <td>Kreditsumme</td>
+                    <td>Ratenzahlung</td>
+                    <td>Tilgung</td>
                     <td>Zinsen</td>
-                    <td>Zinsen Gesamt</td>
-                    <td>Bilanz</td>
+                    <td>Gebühren gesamt</td>
+                    <td>Schuldenstand</td>
                 </tfoot>
             </table>
         </div>
